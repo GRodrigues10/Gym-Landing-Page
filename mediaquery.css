@@ -1,0 +1,100 @@
+@media screen and (max-width:769px){
+    header h1{
+        font-size:3rem;
+    }
+    header img{
+        height: 100px;
+    }
+
+    main h2{
+        font-size: 2rem;
+    }
+    main .part{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .about h2{
+        font-size: 2rem;
+    }
+
+    .about p{
+        font-size: 1rem;
+    }
+
+    .contact h2{
+        font-size: 2rem;
+    }
+
+    .contact button{
+        width: 200px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .contact h3{
+        font-size: 1.7rem;
+    }
+    .contact p{
+        font-size: 1.1rem;
+    }
+
+
+    footer p{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:469px){
+    header h1{
+        font-size: 2rem;
+    }
+
+    header img{
+        height:100px;
+    }
+
+    main h2{
+        font-size:1.9rem;
+    }
+
+    main .parts{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+    main .part{
+        margin-bottom: 10px;
+        width: 60%;
+    }
+
+
+    main .about h2{
+        font-size:1.9rem;
+    }
+
+    main .about p{
+        font-size: 0.9rem;
+    }
+
+    main .contact h2{
+        font-size: 1.9rem;
+    }
+
+    main .contact button{
+        font-size: 1.2rem;
+        width: 160px;
+    }
+    main .contact h3{
+        font-size: 1.5rem ;
+    }
+
+    main .contact p{
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+}
