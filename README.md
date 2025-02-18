@@ -2,4 +2,4 @@
 
 <p>Um modelo de Landing Page para uma Academia.</p>
 
-<p>Link do Projeto:</p>
+<p>Link do Projeto:https://grodrigues10.github.io/Gym-Landing-Page/</p>
