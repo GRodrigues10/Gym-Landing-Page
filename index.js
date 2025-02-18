@@ -13,14 +13,14 @@ const text3 = document.getElementById('text3');
 div1.addEventListener('mouseover', () => {
     text1.classList.remove('invisible');
     text1.classList.add('visible');
-    blur1.style.backgroundColor = 'rgba(0, 0, 0, 0.558)'
+    blur1.style.backgroundColor = 'rgba(0, 0, 0, 0.558)';
     
 });
 
 div1.addEventListener('mouseout', () => {
     text1.classList.remove('visible');
     text1.classList.add('invisible');
-    blur1.style.backgroundColor = 'transparent'
+    blur1.style.backgroundColor = 'transparent';
 
 });
 
@@ -28,26 +28,30 @@ div1.addEventListener('mouseout', () => {
 div2.addEventListener('mouseover', () => {
     text2.classList.remove('invisible');
     text2.classList.add('visible');
-    blur2.style.backgroundColor = 'rgba(0, 0, 0, 0.558)'
+    blur2.style.backgroundColor = 'rgba(0, 0, 0, 0.558)';
 
 });
 
 div2.addEventListener('mouseout', () => {
     text2.classList.remove('visible');
     text2.classList.add('invisible');
-    blur2.style.backgroundColor = 'transparent'
+    blur2.style.backgroundColor = 'transparent';
 });
 
 
 div3.addEventListener('mouseover', () => {
     text3.classList.remove('invisible');
     text3.classList.add('visible');
-    blur3.style.backgroundColor = 'rgba(0, 0, 0, 0.558)'
+    blur3.style.backgroundColor = 'rgba(0, 0, 0, 0.558)';
 
 });
 
 div3.addEventListener('mouseout', () => {
     text3.classList.remove('visible');
     text3.classList.add('invisible');
-    blur3.style.backgroundColor = 'transparent'
+    blur3.style.backgroundColor = 'transparent';
+});
+
+document.querySelector(".zap").addEventListener("click", function() {
+    window.open("https://wa.me/5521965476339", "_blank");
 });
