@@ -50,7 +50,8 @@ header h1{
     width: 100%;
     text-align: center;
     padding: 10px;
-    animation: open-close 1s ease-out forwards;
+    animation: open-close 1s ease-out forwards, moving-border 2s infinite alternate;
+    animation-delay: 0s, 1s;
 }
 
 .parts{
@@ -321,3 +322,16 @@ footer{
         transform: scaleY(1);
     }
 }
+
+@keyframes moving-border {
+    0% {
+        box-shadow: 0 0 5px white;
+    }
+    50% {
+        box-shadow: 0 0 15px white;
+    }
+    100% {
+        box-shadow: 0 0 5px white;
+    }
+}
+
