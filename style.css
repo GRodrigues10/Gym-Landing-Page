@@ -27,17 +27,19 @@ header{
     background-attachment: fixed; 
 }
 
-img{
+img {
     position: absolute;
-    left:0;
+    left: 0;
     border-radius: 50%;
     margin-left: 20px;
-    top:20px;
+    top: 40px;
     height: 120px;
     border: 4px solid white;
     box-shadow: 2px 2px 20px white;
-    
+    animation: slide-in 1s ease-out forwards, floating 2s ease-in-out infinite;
+    animation-delay: 0s, 1s; /* O floating começa depois do slide-in */
 }
+
 
 header h1{
     font-family: 'Poppins';
@@ -48,6 +50,7 @@ header h1{
     width: 100%;
     text-align: center;
     padding: 10px;
+    animation: open-close 1s ease-out forwards;
 }
 
 .parts{
@@ -280,3 +283,41 @@ footer{
 }
 
 
+/* Animations */
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0; /* Começa com opacidade zero */
+        transform: translateX(-100px); /* Inicia deslocado para a esquerda */
+    }
+    100% {
+        opacity: 1; /* Termina com opacidade total */
+        transform: translateX(0); /* Volta para a posição original */
+    }
+}
+
+
+@keyframes open-close {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
