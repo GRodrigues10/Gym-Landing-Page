@@ -3,63 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Nome da Academia]</title>
+    <title>Mundo Fitness</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/gym-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
 
-    <!-- Seção Nossos Planos -->
-    <div class="plans" id="plans">
-        <div id="part1" class="part">
-            <div class="blur" id="blur1"></div>
-            <div class="content" id="text1">
-                <h3>Plano 1</h3>
-                <p>Descrição do plano 1...</p>
+    <header>
+        <div class="img"><img src="images/logo.png" alt="Imagem Logo"></div>
+        <h1>SUPERE SEUS LIMITES</h1>
+    </header>
+
+    <div class="zap">
+        <img src="images/zap.png" alt="Logo do WhatsApp">
+    </div>
+    
+    <main>
+        <h2 class="invisible" id="title">Nossos Planos</h2>
+        <div class="parts">
+            <div class="part invisible" id='part1'>
+                <div id="blur1">
+                    <p id="text1" class="invisible">
+                        Treinamento funcional de alta intensidade, combinando exercícios de força, resistência e agilidade. Trabalha o corpo inteiro e melhora condicionamento físico, explosão muscular e mobilidade. Ideal para quem busca desafios e treinos dinâmicos.
+                    </p>
+                </div>
+            </div>
+            <div class="part invisible" id="part2">
+                <div id="blur2">
+                    <p id="text2" class="invisible">
+                        Treinamento focado no fortalecimento e desenvolvimento muscular. A musculação melhora a resistência, ajuda na definição corporal e promove saúde e bem-estar. Indicada tanto para iniciantes quanto para atletas avançados.
+                    </p>
+                </div>
+            </div>
+            <div class="part invisible" id="part3">
+                <div id="blur3">
+                    <p id="text3" class="invisible">
+                        Aulas de artes marciais como Muay Thai, Jiu-Jitsu e Boxe. Além de fortalecer o corpo, as lutas desenvolvem disciplina, coordenação e autodefesa. Excelente opção para quem quer melhorar a forma física e aprender novas técnicas.
+                    </p>
+                </div>
             </div>
         </div>
-        <div id="part2" class="part">
-            <div class="blur" id="blur2"></div>
-            <div class="content" id="text2">
-                <h3>Plano 2</h3>
-                <p>Descrição do plano 2...</p>
-            </div>
+        
+
+        <div class="about">
+            <h2>SOBRE NÓS</h2>
+            <p>
+
+                Bem-vindo à [Nome da Academia] – O Seu Treino, a Sua Evolução!
+
+                Na [Nome da Academia], oferecemos um ambiente completo para quem busca força, resistência e disciplina. Seja qual for o seu objetivo, temos o treino ideal para você!
+                <br>
+                <br>
+                <br>
+                💪 Musculação – Equipamentos modernos e instrutores qualificados para ajudar você a ganhar força, resistência e definir seu corpo.
+                <br>
+                <br>
+                🔥 Crossfit – Treinos dinâmicos e intensos para quem quer melhorar o condicionamento físico, agilidade e potência.
+                <br>
+                <br>
+                🥋 Lutas Marciais – Aulas de diversas modalidades para desenvolver técnica, autocontrole e condicionamento, com instrutores experientes.
+                <br>
+                <br>
+                <br>
+                
+                Aqui, você encontra uma comunidade motivadora e uma estrutura preparada para transformar seus treinos em resultados reais. Venha treinar conosco e eleve seu desempenho para o próximo nível!
+
+            </p>
         </div>
-        <div id="part3" class="part">
-            <div class="blur" id="blur3"></div>
-            <div class="content" id="text3">
-                <h3>Plano 3</h3>
-                <p>Descrição do plano 3...</p>
-            </div>
+
+        <div class="contact">
+            <h2>Fale Conosco</h2>
+            <button class="instagram">Instagram</button>
+            <button class="whatsapp">WhatsApp</button>
+            <h3>Endereço</h3>
+            <p>
+                Rua: Expedicionário Aires Quaresma, 3646.
+            </p>
+            <p>Complemento: Ao lado da Farmácia.</p>
+            <p>Cep da Academia: 24471-140.</p>
+            <p>Telefone: (21) 96547-6339.</p>
+            
+            
+        
         </div>
-    </div>
-
-    <!-- Seção Sobre Nós -->
-    <div class="about">
-        <h2>SOBRE NÓS</h2>
-        <p>
-            Bem-vindo à [Nome da Academia] – O Seu Treino, a Sua Evolução!<br><br>
-            Na [Nome da Academia], oferecemos um ambiente completo para quem busca força, resistência e disciplina. Seja qual for o seu objetivo, temos o treino ideal para você!<br><br>
-            💪 Musculação – Equipamentos modernos e instrutores qualificados para ajudar você a ganhar força, resistência e definir seu corpo.<br><br>
-            🔥 Crossfit – Treinos dinâmicos e intensos para quem quer melhorar o condicionamento físico, agilidade e potência.<br><br>
-            🥋 Lutas Marciais – Aulas de diversas modalidades para desenvolver técnica, autocontrole e condicionamento, com instrutores experientes.<br><br>
-            Aqui, você encontra uma comunidade motivadora e uma estrutura preparada para transformar seus treinos em resultados reais. Venha treinar conosco e eleve seu desempenho para o próximo nível!
-        </p>
-    </div>
-
-    <!-- Seção Fale Conosco -->
-    <div class="contact">
-        <h2>Fale Conosco</h2>
-        <button class="instagram">Instagram</button>
-        <button class="whatsapp">WhatsApp</button>
-        <h3>Endereço</h3>
-        <p>
-            Rua: Expedicionário Aires Quaresma, 3646.<br>
-            Complemento: Ao lado da Farmácia.<br>
-            Cep da Academia: 24471-140.<br>
-            Telefone: (21) 96547-6339.
-        </p>
-    </div>
-
-    <script src="script.js"></script>
+       
+    </main>
+   
+    <footer>
+        <p>&copy; Todos os Direitos Resevados!</p>
+    </footer>
+<script src="index.js"></script>
 </body>
 </html>
