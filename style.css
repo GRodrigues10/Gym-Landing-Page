@@ -51,6 +51,7 @@ header img {
     margin-right: 20px;
     cursor: pointer;
     animation: vibrar 6.5s steps(1) infinite;
+    z-index: 9999;
 }
 
 
@@ -84,6 +85,7 @@ main h2{
     text-shadow: 1px 1px 1px black;
     margin-top: 70px;
     text-align: center;
+    /* transform: translateY(50px); */
 }
 
 main .part{
@@ -163,6 +165,7 @@ main #part2:hover{
     transform: scale(1.05);
 }
 
+
 main #part3{
     background-image: url(./images/pexels-cottonbro-4761668.jpg);
     background-size:cover;
@@ -186,10 +189,18 @@ main #part3:hover{
     margin: auto;
     margin-top: 60px;
     background-color: rgba(0, 0, 0, 0.473);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
     /* background-image: url(images/gym2-black.jpg);
     margin-top: 60px;
     background-size: cover;
     background-position: center center; */
+}
+
+.about.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about h2{
@@ -220,7 +231,17 @@ main #part3:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
+
+
+.contact.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .contact h2{
     font-size: 3rem;
@@ -364,5 +385,26 @@ footer{
     30% { transform: translate(0, 0); } /* Termina a vibração */
     100% { transform: translate(0, 0); } /* Pausa até repetir */
 }
+
+@keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .invisible{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .animate {
+    animation: fadeSlide 0.8s ease-out forwards;
+  }
+  
 
 
