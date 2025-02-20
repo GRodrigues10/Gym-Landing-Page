@@ -98,3 +98,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     observer.observe(contactSection); // Observa a seção "Fale Conosco"
 });
+
+document.querySelectorAll('.part').forEach(part => {
+    part.addEventListener('click', (e) => {
+        e.stopPropagation(); // Previne o evento de se propagar para o contêiner pai
+        const textElement = e.currentTarget.querySelector('p');
+        textElement.classList.toggle('visible');
+    });
+});
+
+document.querySelector('.parts').addEventListener('click', (e) => {
+    // Aqui você pode adicionar alguma lógica, caso precise interagir com o contêiner.
+});
+
